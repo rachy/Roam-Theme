@@ -1,0 +1,25 @@
+/**
+ * 
+ * Roam Theme for Roam Eco
+ * SCSS Setup based on SMACSS with base, layout, modules, and 
+ * theme (page) specific rules. State/change states are kept with 
+ * selectors for clarity across files due to way SCSS handles nesting.
+ * 
+ * Dependencies: gulp, gulp-sass, normalize
+ * 
+ * CSS Preprocessor: scss
+ * 
+ * CSS Standard: SMACSS - structure, BEM - naming convention
+ * 
+*/
+
+@import "normalize";
+@import "config/variables";
+@import "config/mixins";
+@import "base";
+@import "layout";
+@import "modules/navigation";
+@import "modules/forms";
+@import "modules/blocks";
+@import "pages";
+ 

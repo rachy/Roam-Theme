@@ -1,0 +1,25 @@
+input {
+    background: rgb(255, 255, 255);
+    border: 0;
+    border-bottom: 2px solid #000;
+    &:focus {
+        border-bottom: 2px solid rgb(19, 156, 230);
+        outline: 0px solid #fff;
+    }
+}
+#search-block-form {
+    display: flex;
+    align-items: flex-end;
+    font-size: .8em;
+    .form-search {
+        width: 100%;
+        min-width: 13em;
+        max-width: 13em;
+    }
+    .button {
+        font-weight: 900;
+        &:hover {
+            border-bottom: 2px solid rgb(19, 156, 230);
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $heading-font;
+    @include page-width;
+
+}
+.block-system-branding-block {
+    display: flex;
+    align-items: center;
+    .logo {
+        min-width: 2em;
+        max-width: 2em;
+        margin: .7em;
+        
+    }
+    h1 a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        max-width: 2rem;
+        line-height: 1rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        transition: $tr-a-hover;
+        &:hover {
+            color: #333;
+        }
+    }
+}
+
+.block-local-tasks-block {
+    text-align: center;
+    li {
+        display: inline-block;
+        a {
+            display: inline-block;
+            padding: 10px;
+            background: #49a2da;
+            color: #fff;
+            text-decoration: none;
+            transition: $tr-a-hover;
+            &:hover{
+                background: #286f9b;
+            }
+        }
+    }
+}
+// Additional featured article styles found in modules/blocks
+.featured-article {
+    @include page-width;
+}

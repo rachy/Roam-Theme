@@ -1,0 +1,18 @@
+fonts:
+  license:
+    name: SIL Open Font License, 1.1
+    url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+  css:
+    theme:
+      //use.typekit.net/hkq3ghd.css: { type: external }
+global-css:
+  css:
+    theme:
+      css/app.css: { }
+global-js:
+  js:
+    js/app.js: { }
+  dependencies:
+    - core/jquery
+    
+

@@ -1,0 +1,35 @@
+<div class="container">
+  <header class="header">
+    {{ page.header }}
+    <div class="navbar">
+      <div class="navbar__mobile">
+        <a href="#" class="navbar__toggle"></a>
+      </div>
+      <div id="container">
+        <div class="navbar__main">{{ page.navigation }}</div>
+      </div>
+    </div>{# /.nav #}
+  </header>
+  {% if page.hero %}
+      <div class="hero">
+        {{ page.hero }}
+      </div>
+  {% endif %}
+  {% if page.admin %}
+      <div class="admin">
+        {{ page.admin }}
+      </div>
+    {% endif %}
+  <main id="main-content" class="main">
+      {{ tabs }}
+      {% if action_links %}
+        <nav class="action-links">
+          {{ action_links }}
+        </nav>
+      {% endif %}
+      {{ page.content }}
+  </main>
+  <footer class="footer">
+  {{ page.footer }}
+  </footer>
+</div>
