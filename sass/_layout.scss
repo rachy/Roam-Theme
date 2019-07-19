@@ -2,29 +2,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 2rem;
     font-family: $heading-font;
     @include page-width;
-
 }
+
 .block-system-branding-block {
     display: flex;
     align-items: center;
+
     .logo {
         min-width: 2em;
         max-width: 2em;
         margin: .7em;
-        
     }
-    h1 a{
+    h1 {
+        margin-left: 0;
+    }
+    h1 a {
         display: block;
-        text-decoration: none;
-        color: black;
-        font-size: 1rem;
         max-width: 2rem;
-        line-height: 1rem;
-        text-transform: uppercase;
+        font-size: 1rem;
         font-weight: 900;
+        line-height: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
         transition: $tr-a-hover;
+
         &:hover {
             color: #333;
         }
@@ -33,22 +38,46 @@
 
 .block-local-tasks-block {
     text-align: center;
+
     li {
         display: inline-block;
+
         a {
+            background: #49a2da;
             display: inline-block;
             padding: 10px;
-            background: #49a2da;
-            color: #fff;
             text-decoration: none;
+            color: #fff;
             transition: $tr-a-hover;
-            &:hover{
+
+            &:hover {
                 background: #286f9b;
             }
         }
     }
 }
-// Additional featured article styles found in modules/blocks
-.featured-article {
+
+.main {
     @include page-width;
+    font-size: 0.7rem;
+    @media screen and (min-width: 50rem){
+        font-size: 1rem;
+    }
+}
+
+// Article Layout
+.node--type-article .layout--twocol-section--67-33 {
+    
+    .layout__region--first{
+        @media screen and (min-width: 50rem){
+            margin-top: -5rem;
+            box-sizing: border-box;
+            padding: 1em 1em 1em 4em;
+        }
+        
+        div {
+            background: #fff;
+            padding: 1em 1em 0;
+        }
+    }
 }

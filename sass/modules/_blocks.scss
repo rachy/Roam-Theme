@@ -1,4 +1,26 @@
+// Featured Article
 .featured-article p {
-    max-width: 28rem;
+    background: #fff;
+    max-width: 28em;
+    padding: 1em;
+    margin-left: 3em;
+    position: relative;
+    z-index: 5;
 }
 
+.hero-image {
+    position: relative;
+    margin-top: -3rem;
+    z-index: 0;
+
+    a {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+}
+// ! Featured Article

@@ -1,15 +1,18 @@
 .navbar__main {
     margin-right: 1em;
+
     .nav-item {
         display: inline-block;
+
         a {
             display: inline-block;
+            padding: .6em;
             font-size: .8em;
             font-weight: 900;
             text-decoration: none;
             color: #000;
-            padding: .6em;
             transition: $tr-a-hover;
+
             &:hover {
                 color: #333;
             }

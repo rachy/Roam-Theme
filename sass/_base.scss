@@ -1,28 +1,37 @@
 html {
     font-size: 21px;
 }
+
 body {
     background: #fff;
     font-family: $primary-font;
 }
+
 h1,h2,h3,h4 {
     font-family: $heading-font;
 }
+
 h1 {
+    max-width: 5.5em;
+    padding: 0.2em;
+    margin-left: .55em;
     font-size: 5em;
-    max-width: 28rem;
+
     a {
         color: #000;
     }
 }
+
 p {
     font-weight: 100;
 }
+
 a {
     font-weight: 900;
     text-decoration: none;
     color: #21b38e;
     transition: $tr-a-hover;
+    
     &:hover {
         color: #14725b;
     }
