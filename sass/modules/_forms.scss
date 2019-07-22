@@ -19,12 +19,13 @@ input[type="submit"]{
 #search-block-form {
     display: flex;
     align-items: flex-end;
-    font-size: .8em;
+    font-size: 0.8em;
 
     .form-search {
         width: 100%;
         min-width: 13em;
         max-width: 13em;
+
         &:hover {
             border-bottom: 2px solid $blue;
 

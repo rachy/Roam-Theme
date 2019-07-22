@@ -2,18 +2,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-left: .5em;
+    padding-left: 0.5em;
+
     @media screen and (min-width: 36.42rem){
         flex-wrap: nowrap;
     }
 }
 .navbar__item {
     list-style: none;
+
     a {
         position: relative;
         display: block;
-        padding: .6em;
-        font-size: .8em;
+        padding: 0.6em;
+        font-size: 0.8em;
         font-weight: 900;
         text-decoration: none;
         color: #000;
@@ -25,9 +27,12 @@
 }
 .navbar__main {
     margin-right: 1em;
+
     .navbar__item {
         overflow: hidden;
+
         a {
+
             &:before{
                 position: absolute;
                 content: '';
@@ -39,6 +44,7 @@
                 transition: ease 0.3s all;
                 opacity: 0;
             }
+
             &:hover:before {
                 position: absolute;
                 content: '';
@@ -49,8 +55,6 @@
                 transform: translateX(0%);
                 opacity: 1;
             }
-            
         }
-        
     }
 }

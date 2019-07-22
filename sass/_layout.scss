@@ -66,6 +66,7 @@
 .main {
     @include page-width;
     font-size: 0.7rem;
+
     @media screen and (min-width: 50rem){
         font-size: 1rem;
     }
@@ -87,6 +88,14 @@
         }
     }
 }
+
+// Grid Layout
+.grid-content {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 // Footer Layout
 .footer > div{
     display: flex;
@@ -97,22 +106,25 @@
     font-family: $heading-font;
     @include page-width;
     padding: 2em;
+
     > div {
         flex-grow: 1;
     } 
 
     @media screen and (min-width: 36.42rem){
         text-align: left;
+
         > div {
             flex-grow: 0;
         }
     }
-
 }
+
 .footer img{
     max-width: 1.5em;
     height: auto;
     transition: ease 0.3s all;
+
     &:hover {
         opacity: 0.7;
     }
