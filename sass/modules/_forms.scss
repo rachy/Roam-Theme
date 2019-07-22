@@ -5,7 +5,7 @@ input {
     border-bottom: 2px solid #000;
 
     &:focus {
-        border-bottom: 2px solid rgb(19, 156, 230);
+        border-bottom: 2px solid $blue;
         outline: 0px solid #fff;
     }
 }
@@ -25,15 +25,25 @@ input[type="submit"]{
         width: 100%;
         min-width: 13em;
         max-width: 13em;
+        &:hover {
+            border-bottom: 2px solid $blue;
+
+        }
     }
 
     .button {
-        background: transparent;
-        font-weight: 900;
-        color: #000;
+        text-indent: -9999px;
+        background: transparent url(../images/search.png) no-repeat; 
+        background-size: contain;
+        width: 1em;
+        border-bottom: 0px;
+        margin-left: -1em;
+
+        // font-weight: 900;
+        // color: #000;
         
-        &:hover {
-            border-bottom: 2px solid rgb(19, 156, 230);
-        }
+        // &:hover {
+        //     border-bottom: 2px solid rgb(19, 156, 230);
+        // }
     }
 }
